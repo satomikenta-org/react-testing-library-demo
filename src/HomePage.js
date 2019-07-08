@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Fetch from './Fetch';
 
 export default function HomePage() {
   
@@ -11,6 +12,8 @@ export default function HomePage() {
       <div>This is HomePage</div>
       <button onClick={handleOnClick}>Login</button>
       <div data-testid="title">{title}</div>
+
+      <Fetch/>
     </div>
   )
 }
